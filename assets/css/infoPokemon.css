@@ -1,0 +1,234 @@
+.container-selectedPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    min-width: 100%;
+    min-height: 65vh;
+    margin: 1rem auto;
+    margin-bottom: 6rem;
+}
+
+/* container-namePokemon */
+
+.container-namePokemon{
+    display: flex;
+    padding-top: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-namePokemon img{
+    margin: 0;
+    padding-bottom: .21rem;
+    padding-right: .1rem;
+}
+
+.namePokemon{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* container-types */
+
+.container-types {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.container-types  .type{
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0.2rem;
+    filter: brightness(1.1);
+} 
+
+.container-numberPokemon{
+    display: flex;
+    align-self: flex-end;
+    margin: 1.5rem 2rem ;
+    font-size: 1.5rem;
+    font-weight: 700;
+    opacity: 0.4;
+}
+
+/* container-map */
+
+.container-map{
+    display: flex;
+    padding: 0;
+    background-color: rgb(250, 184, 1840, .5);
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+.container-map img{
+    margin-top: .2rem;
+    
+}
+
+.container-map .regiao{
+    margin-left: 0;
+    padding-left: 0.3rem;
+}
+
+/* .container-altura */
+
+.container-altura{
+    margin-top: .3rem;
+    display: flex;
+    padding: 0;
+    background-color: rgba(179, 174, 243, 0.5);
+    border-radius: 1rem ;
+    padding-left: 1rem;
+}
+
+.container-altura img{
+    margin-top: .2rem;
+    
+}
+
+.container-altura .altura{
+    margin-left: 0;
+    padding-left: 0.3rem;
+}
+
+/* .container-peso */
+
+.container-peso{
+    margin-top: .3rem;
+    display: flex;
+    padding: 0;
+    background-color: rgba(179, 174, 243, 0.5);
+    border-radius: 1rem ;
+    padding-left: 1rem;
+}
+
+.container-peso img{
+    margin-top: .3rem;
+    
+}
+
+.container-peso .peso{
+    margin-left: 0;
+    padding-left: 0.3rem;
+}
+
+
+
+/* selectedPokemon */
+
+.selectedPokemon{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    min-width: 270px;
+    min-height: 350px;
+    max-width: 600px;
+
+}
+
+.selectedPokemon ul{
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style-type: none;
+    padding: 3px;
+    margin-top: .2rem;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: row;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+.selectedPokemon ul li{
+    padding: 8px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.container-abilities{
+    display: column;
+    text-align: center;
+    border-radius: 1rem ;
+}
+
+.abilities{
+    display: flex;
+    padding: .5rem;
+    background-color: rgba(252, 161, 77, 0.5);
+    border-radius: 1rem ;
+    justify-content: center;
+}
+
+.selectedPokemon-header{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.container-imgPokemon{
+    background-color: rgba(255, 255, 255, .7);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.stats{
+    height: 80%;
+    background-color: rgba(245, 147, 147, 0.8);
+    list-style-type: none;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: row;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.barra{
+    width: 90%;
+    height: 1.3rem;
+    padding-top: .2rem;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: .75rem;
+    font-size: .85rem;
+    text-align: center;
+    font-weight: 700;
+    margin: .3rem;
+    margin-left: 1rem;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .selectedPokemon ul {
+           grid-template-columns: 1fr;
+       }
+
+       #abilities{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+   }
